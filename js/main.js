@@ -2,8 +2,8 @@ $(document).ready(function() {
 	// Header Scroll
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop();
-
-		if (scroll >= 50) {
+		
+		if (scroll >= 50 && typeof window.orientation === 'undefined') {
 			$('#header').addClass('fixed');
 		} else {
 			$('#header').removeClass('fixed');
