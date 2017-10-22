@@ -55,10 +55,10 @@
       <p>I am honest, hard-working, and will always focus on your goals. If you are looking for a problem solver and experienced developer, just leave me a message and I'll contact you soon.</p>
       <!--contact form start-->
       <div class="col-md-6 col-md-offset-3 conForm">
-        <div id="message"></div>
-        <form method="post" action="php/contact.php" name="cform" id="cform">
+        <div style="display: none;" id="message" class="alert alert-success"></div>
+        <form method="post" name="cform" id="cform">
           <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
+          <input name="_replyto" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
           <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Comment..."></textarea>
           <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
           <div id="simple-msg"></div>
@@ -68,6 +68,7 @@
     </div>
   </div>
 </section>
+
 <!-- description text section --> 
 <!-- footer -->
 <footer class="section-footer footer">
