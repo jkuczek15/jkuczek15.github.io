@@ -1,44 +1,66 @@
+var form_submitted = false;
+
 $('#submit').click(function(){
-	// list of error messages
-	var error_messages = {
-		email_require: 'Email is a required field.',
-		message_require: 'Message is a required field.',
-		name_require: 'Name is a required field.',
-		email_invalid: 'Reply-to email is invalid'
-	};
+	// validate the form data
+	form_submitted = true;
+	var data = validate();
 
-	// grab the data
-	var data = {
-		"Name"      : $('#name').val(),
-		"Reply-To"  : $('#email').val(),
-		"Message"   : $('#comments').val(),
-	};
-
-	// validate the form
-	var error = validate(data);
-
-	if(error != null){
-		$('#message').attr('class', 'alert alert-danger');
-		$('#message').show();
-		$('#message').html(error_messages[error]);
-	}else{
+	if(data != null){
 		send_email(data);
 	}// end if there is an error
 
 	return false;
 });
 
-function validate(form_data){
-	// validate the contact form
-	if(form_data["Name"] == '')
-		return 'name_require';
-	if(form_data["Reply-To"] == '')
-		return 'email_require';
-	if(form_data["Message"] == '')
-		return 'message_require';
-	if(!validateEmail(form_data["Reply-To"]))
-		return 'email_invalid';
-	return null;
+$('#cform').keyup(function(){
+	validate();
+});
+
+function validate(){
+	if(!form_submitted){
+		return;
+	}// end if form hasnt been submitted yet
+
+	// validate our form before sending an email
+	var data = {
+		"Name"      : $('#name').val(),
+		"Reply-To"  : $('#email').val(),
+		"Message"   : $('#message').val(),
+	};
+
+	var error = false;
+	if(data["Name"].trim() == '') {
+		error = true;
+		$('#name_err').html("Name is a required field.").show();
+		$('#name').addClass('invalid error-input');
+	}else {
+		$('#name_err').hide();
+		$('#name').removeClass('invalid error-input');	
+	}// end if no name in form
+
+	if(data["Message"].trim() == '') {
+		error = true;
+		$('#message_err').html("Message is a required field.").show();
+		$('#message').addClass('invalid error-input');
+	}else {
+		$('#message_err').hide();
+		$('#message').removeClass('invalid error-input');
+	}// end if no message in form
+		
+	if(data["Reply-To"].trim() == '') {
+		error = true;
+		$('#email_err').html("Email address is a required field.").show();
+		$('#email').addClass('invalid error-input');
+	}else if(!validateEmail(data["Reply-To"])) {
+		error = true;
+		$('#email_err').html("Email address is invalid.").show();
+		$('#email').addClass('invalid error-input');
+	}else {
+		$('#email_err').hide();
+		$('#email').removeClass('invalid error-input');
+	}// end if no email or email invalid
+	
+	return error ? null : data;
 }// end function for validating form
 
 function validateEmail(email) {
@@ -46,16 +68,15 @@ function validateEmail(email) {
     return re.test(email);
 }// end function validateEmail
 
-function send_email(form_data){
+function send_email(data){
 	$.ajax({
 		url: "https://formspree.io/joe.kuczek@gmail.com", 
 		method: "POST",
-		data: form_data,
+		data: data,
 		dataType: "json",
 		success: function(data){
-			$('#message').attr('class', 'alert alert-success');
-			$('#message').html("<strong>Success!</strong> Message has been sent, I'll be in touch with you shortly.");
-			$('#message').slideDown('slow');
+			$('#success_message').html("<strong>Success!</strong> Message has been sent, I'll be in touch with you shortly.");
+			$('#success_message').slideDown('slow');
 			$('#cform img.contact-loader').fadeOut('slow',function(){ $(this).remove() });
 			$('#submit').removeAttr('disabled');
 			$('#cform').slideUp('slow');

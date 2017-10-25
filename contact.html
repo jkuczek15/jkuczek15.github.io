@@ -52,14 +52,18 @@
 <section id="inner-description" class="section inner-description">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 text-center">
-      <p>I am honest, hard-working, and will always focus on your goals. If you are looking for a problem solver and experienced developer, just leave me a message and I'll contact you soon.</p>
+      <p>I am honest, hard-working, and will always focus on your goals. If you are looking for a problem solver and experienced developer, leave me a message and I'll contact you soon.</p>
       <!--contact form start-->
       <div class="col-md-6 col-md-offset-3 conForm">
-        <div style="display: none;" id="message" class="alert alert-success"></div>
+        <div style="display: none;" id="success_message" class="alert alert-success"></div>
         <form method="post" name="cform" id="cform">
           <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-          <input name="_replyto" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Comment..."></textarea>
+            <small id="name_err" style="display: none;" class="error-label help-block"></small>
+          <input name="_replyto" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Email Address..." >
+            <small id="email_err" style="display: none;" class="error-label help-block"></small>
+          <textarea name="message" id="message" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
+           <small id="message_err" style="display: none;" class="error-label help-block"></small>
+          <div style="clear: both;"></div>
           <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
           <div id="simple-msg"></div>
         </form>
@@ -84,7 +88,7 @@
             <li><a target="_blank" href="https://plus.google.com/+JoeKuczek"><i title="Google Plus" class="fa fa-google-plus"></i></a></li>
           </ul>
           </p>
-          <p>Joe Kuczek - Software Engineering</p>
+          <p>Joe Kuczek - Software Engineer</p>
         </div>
       </div>
     </div>

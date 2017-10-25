@@ -621,3 +621,21 @@ margin-top:50px;
 .active {
 	color: rgba(255, 255, 255, 1); 
 }
+
+.invalid {
+	border: 1px solid #f45642 !important;
+	border-radius: 3px;
+}
+
+.error-label {
+	float: left;
+	color: #f45642;
+}
+
+.error-input {
+	margin-bottom: 0px !important;
+}
+
+small {
+	font-size: 90%;
+}
