@@ -10,7 +10,7 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Joe Kuczek - Software Engineering - Projects</title>
+<title>Joe Kuczek - Projects</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
 <link rel="stylesheet" href="css/main.css">
@@ -43,17 +43,58 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="innerbanner-text text-center">
         <p>Projects</p>
-        <!-- banner text --> 
       </div>
     </div>
   </div>
 </section>
 <!-- header section -->
 <!-- description text section -->
-<section id="inner-description" class="section inner-description">
+<section id="inner-description" class="section">
     <div class="container">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <h2>Under Construction</h2>
+        <div class="col-md-10 col-md-offset-1">
+            
+            <a target="_blank" href="https://github.com/jkuczek15/CS_309"><h3>The MU – Group Project</h3></a>
+            <p>This is a web / iOS application created to give students one platform where they can view free food items on campus. They are also able to buy/sell textbooks, tickets, furniture and other items. I worked on the web side of the application, which utilized Google’s Firebase service as a backend and Angular 2 as a client-side framework. We chose these technologies because Angular is a very popular framework by Google, and we though Angular would integrate nicely with Firebase on the backend. We chose Firebase as a backend because we wanted real-time updates, and Firebase provided simple guides for reading and writing data on both iOS and web.</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Single page web application.</li>
+                <li>User-authentication system utilizing third party authentication (Google) and limiting access to only users with an “@iastate.edu” email.</li>
+                <li>Multiple levels of authentication with different access rights: user, moderator, admin</li>
+                <li>Fully responsive real-time chat that can communicate with the iOS application.</li> 
+                <li>Users can view, edit, create, and delete different items.</li>
+                <li>Ability to view your own “for-sale” items, ability to upload attachments, ability to block users.</li>
+                <li>Real-time updates throughout the entire application.</li>
+            </ul>
+            <h4>High Level Diagram:</h4><br/>
+            <img width="50%" height="50%" src="images/mu-diagram.png" /><br/>
+
+            <a target="_blank" href="https://github.com/jkuczek15/CS_339"><h3>Website for Triangle Fraternity – Group Project </h3></a>
+            <p>This is a web application created for the Triangle Fraternity at Iowa State. The client needed to be able to update content with upcoming events or announcements. We created a single page web application utilizing MySQL as a database, Spring Framework on the backend, and standard HTML / JavaScript + jQuery / CSS on the frontend. We decided to create this backend because we weren’t familiar with an enterprise server-side framework like Spring. We chose a simple frontend because the website didn’t require a lot of complex/shared components on the client side.</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Single page web application.</li>
+                <li>Custom scrolling navigation bar</li>
+                <li>User editable content (links, text, images, and HTML)</li>
+                <li>Secure service oriented multi-layered architecture.</li> 
+                <li>Custom basic authentication system utilizing SSL.</li>
+            </ul>
+            <h4>High Level Diagram:</h4><br/>
+            <img width="50%" height="50%" src="images/triangle-diagram.png" /><br/>
+
+            <a target="_blank" href="https://github.com/jkuczek15/rlg327"><h3>Rouge-like Dungeon Crawler Application – Individual</h3></a>
+            <p>Created a text-based desktop game that includes all the basics of C++ (IO, file streams, pointers, vectors, classes, etc.). Converted the game into an Android application, which also utilizes Java. Developed an understanding of the differences between high and low-level programming languages. Utilized the Android NDK library to run native C++ code on an Android device. As well as developing this project, I came up for the idea. Our professor gave us a lot of freedom when creating the final version of our project, so I decided to create an Android app.</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Implementation of Dijkstra’s pathfinding algorithm to find the shortest path to the player.</li>
+                <li>Graphical mobile interface given to traditional desktop dungeon game.</li>
+                <li>Different types of monsters and monster abilities imported from custom configuration file.</li>
+                <li>Player has an inventory, HP, can drop and pickup items that allow them to deal more damage.</li> 
+                <li>Players can travel between levels of the dungeon each with a different difficulty.</li>
+            </ul>
+            <h4>Screenshots:</h4>
+            <img width="47%" height="47%" src="images/rlg1.png" />&nbsp;&nbsp;
+            <img width="47%" height="47%" src="images/rlg2.png" />
+          </ul>
         </div>
     </div>
 </section>
