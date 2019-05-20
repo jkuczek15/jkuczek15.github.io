@@ -1,207 +1,276 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
-
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Joe Kuczek - Home</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jkuczek15</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+<link rel="icon" href="https://avatars1.githubusercontent.com/u/17358856?v=4" type="image/png"></head>
 <body>
-<!-- header section -->
-<section class="banner" role="banner">
-  <header id="header"> 
-    <!-- navigation section  -->
-    <div class="header-content clearfix">
-      <nav class="navigation" role="navigation">
-        <ul class="primary-nav">
-          <li><a class="default active" href="index.html">Home</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-    <!-- navigation section  --> 
-  </header>
-  
-  <!-- banner text -->
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-        <h1>Hey, I’m Joe</h1>
-        <p>My goal is to make an impact on large-scale software projects,<br><br/>
-          Scroll to learn more about me.</p>
-        <!-- banner text --> 
-      </div>
+    <div id="loading">
+        <div id="spinner"></div>
     </div>
-  </div>
-</section>
-<!-- header section --> 
-<!-- description text section -->
-<section id="descripton" class="section descripton">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 text-center"> <img width="350" height="350" style="border-radius: 500px;" src="images/designer-pic.jpg" alt="Mafolio">
-      <h3><strong>Joe Kuczek</strong></h3>
-      <p>Software Engineer</p>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://avatars1.githubusercontent.com/u/17358856?v=4) center;"></div>
+        <div id="username"><span style="display:block;">Joe Kuczek</span>@jkuczek15</div>
+        <div id="userbio" style="display: block;">Programmer, Music junkie, Gamer</div>
+        <div id="about">
+        <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+        <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+        <span style="display:none;"><i class="fas fa-link"></i> &nbsp; </span>
+        <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Chicago, IL</span>
+        <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span></div>
     </div>
-    <div class="col-md-10 col-md-offset-1 text-center">
-      <p>I'm a Senior at Iowa State University pursuing a degree in Software Engineering. I currently work as a part-time Web Developer at the Office of Admissions. I'm a motivated learner interested in full-stack web development and design. I'm always on the lookout for new technologies that help to make software development simpler. </p>  
-      <p>In my free time, I enjoy mixing music with a MIDI controller, playing intramural sports, or checking out the latest news on artificial intelligence. As you navigate this website, you will see some of my previous work experiences and projects. Feel free to contact me <a href="contact.html">here</a> if you have any questions.</p>
+    <div id="display">
+        <div id="work">
+            <h1>Work.</h1>
+            <div id="projects">
+                    <a href="https://github.com/jkuczek15/electron-pouchdb" target="_blank">
+                    <section>
+                        <div class="section_title">electron-pouchdb</div>
+                        <div class="about_section">
+                        <span style="display:block;">Simple Electron application that uses a local PouchDB database.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/lux-ebay" target="_blank">
+                    <section>
+                        <div class="section_title">lux-ebay</div>
+                        <div class="about_section">
+                        <span style="display:block;">Resold MVP - cashless online marketplace application written in PHP</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/spotifycollab" target="_blank">
+                    <section>
+                        <div class="section_title">spotifycollab</div>
+                        <div class="about_section">
+                        <span style="display:block;">Create a queue with friends and play songs from your Spotify libraries and playlists.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/job_applier" target="_blank">
+                    <section>
+                        <div class="section_title">job_applier</div>
+                        <div class="about_section">
+                        <span style="display:block;">Django and Python - Auto-apply for jobs</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/Job-Scheduler" target="_blank">
+                    <section>
+                        <div class="section_title">Job-Scheduler</div>
+                        <div class="about_section">
+                        <span style="display:block;">Angular - Task/Job Scheduler</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/jkuczek15.github.io" target="_blank">
+                    <section>
+                        <div class="section_title">jkuczek15.github.io</div>
+                        <div class="about_section">
+                        <span style="display:block;">HTML, CSS, Javascript - Portfolio Website</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/PA1" target="_blank">
+                    <section>
+                        <div class="section_title">PA1</div>
+                        <div class="about_section">
+                        <span style="display:block;">Java - Bloom Filters and Hash Functions </span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/bxSlider" target="_blank">
+                    <section>
+                        <div class="section_title">bxSlider</div>
+                        <div class="about_section">
+                        <span style="display:block;">Bootstrap - Customized slider</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/Custom-Navbar" target="_blank">
+                    <section>
+                        <div class="section_title">Custom-Navbar</div>
+                        <div class="about_section">
+                        <span style="display:block;">Bootstrap - Navigation bar</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/Web-Consulting" target="_blank">
+                    <section>
+                        <div class="section_title">Web-Consulting</div>
+                        <div class="about_section">
+                        <span style="display:block;">MEAN - Web consulting landing site</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/SummerWebDev2017" target="_blank">
+                    <section>
+                        <div class="section_title">SummerWebDev2017</div>
+                        <div class="about_section">
+                        <span style="display:block;">MEAN - Base project</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/Git-Issue-Manager" target="_blank">
+                    <section>
+                        <div class="section_title">Git-Issue-Manager</div>
+                        <div class="about_section">
+                        <span style="display:block;">Laravel - Git Issue Tracker </span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/CS_311" target="_blank">
+                    <section>
+                        <div class="section_title">CS_311</div>
+                        <div class="about_section">
+                        <span style="display:block;">Java - Design and Analysis of Algorithms projects</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/CS_319" target="_blank">
+                    <section>
+                        <div class="section_title">CS_319</div>
+                        <div class="about_section">
+                        <span style="display:block;">LAMP and Angular - Software Construction and User Interfaces</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/CS_309" target="_blank">
+                    <section>
+                        <div class="section_title">CS_309</div>
+                        <div class="about_section">
+                        <span style="display:block;">Angular - Iowa State market web application</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a>
+                    <a href="https://github.com/jkuczek15/rlg327" target="_blank">
+                    <section>
+                        <div class="section_title">rlg327</div>
+                        <div class="about_section">
+                        <span style="display:block;">C++ and Android - Rouge-like dungeon crawler</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                    </a></div>
+        </div>
+        <div id="blog_section" style="display:none;">
+            <h1>Blog.</h1>
+            <div id="blogs"></div>
+        </div>
+        <div id="footer">
+            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+        </div>
     </div>
-  </div>
-</section>
-<!-- description text section -->
+    <script type="text/javascript">
+    setTimeout(function(){
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function(){
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+        },800);
+    },1500);
+    $.getJSON("./blog/blog.json", function(blog){
+        for(var i = 0; i < blog.length; i++){
+            $("#blogs").append(`
+            <a href="/blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `)
+        }
+    });
+    </script>
 
-<!-- portfolio section -->
-<!-- FIXME REMOVED FOR NOW
-<section id="works" class="works section no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-1.jpg" class="work-box"> <img src="images/work-1.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Logo Design</p>
-          </div>
-        </div> 
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME        
-      </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-2.jpg" class="work-box"> <img src="images/work-2.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Website Design</p>
-          </div>
-        </div> 
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME 
-      </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-3.jpg" class="work-box"> <img src="images/work-3.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Branding</p>
-          </div>
-        </div>
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME
-      </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-4.jpg" class="work-box"> <img src="images/work-4.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Graphic Design</p>
-          </div>
-        </div>
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME       
-      </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-5.jpg" class="work-box"> <img src="images/work-5.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Website Design</p>
-          </div>
-        </div>
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME 
-      </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-6.jpg" class="work-box"> <img src="images/work-6.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Logo Design</p>
-          </div>
-        </div>
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME        
-      </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-7.jpg" class="work-box"> <img src="images/work-7.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Branding</p>
-          </div>
-        </div>
-FIXME -->
-        <!-- overlay --> 
- <!-- FIXME   
-       </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-8.jpg" class="work-box"> <img src="images/work-8.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Project Name</h5>
-            <p>Website Design</p>
-          </div>
-        </div>
-FIXME -->
-        <!-- overlay --> 
-<!-- FIXME 
-        </a> </div>
-    </div>
-  </div>
-</section>
-FIXME -->
-
-<!-- portfolio section --> 
-<!-- contact -->
-<section id="hireme" class="section hireme">
-    <div class="container">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h3>Need something?</h3>
-        <p>I am seeking a full-time position that may begin upon my graduation in May 2018.</p>
-        <a href="contact.html" class="btn btn-large">Contact me</a> </div>
-    </div>
-</section>
-<!-- contact -->
-<!-- footer -->
-<footer class="section-footer footer">
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="col-md-12">
-        <p>
-        <ul class="footer-share">
-          <li><a target="_blank" href="https://github.com/jkuczek15"><i title="Github" class="fa fa-github"></i></a></li>
-          <li><a target="_blank" href="https://www.facebook.com/joe.kuczek"><i title="Facebook" class="fa fa-facebook"></i></a></li>
-          <li><a target="_blank" href="https://twitter.com/JoeKuczek"><i title="Twitter" class="fa fa-twitter"></i></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/joe-kuczek/"><i title="Linkedin" class="fa fa-linkedin"></i></a></li>
-          <li><a target="_blank" href="https://plus.google.com/+JoeKuczek"><i title="Google Plus" class="fa fa-google-plus"></i></a></li>
-        </ul>
-        </p>
-        <p>Joe Kuczek - Software Engineer</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer --> 
-
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script>  
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
-</body>
-</html>
+</body></html>
