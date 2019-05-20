@@ -72,7 +72,7 @@ jsdom.fromFile("./assets/index.html", options).then(function (dom) {
         <span style="display:${user.email == null || !user.email ? 'none' : 'block'};"><i class="fas fa-envelope"></i> &nbsp; ${user.email}</span>
         <span style="display:${user.blog == null || !user.blog ? 'none' : 'block'};"><i class="fas fa-link"></i> &nbsp; ${user.blog}</span>
         <span style="display:${user.location == null || !user.location ? 'none' : 'block'};"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; ${user.location}</span>
-        <span style="display:${user.hireable == false || !user.hireable ? 'none' : 'block'};"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; <a href="https://resold.us">Resold Founder</a></span>`;
+        <span style="display:${user.hireable == false || !user.hireable ? 'none' : 'block'};"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; <a style="color: white;" href="https://resold.us">Resold Founder</a></span>`;
         //add data to config.json
         fs.readFile("config.json", function (err , data) {
             if (err) throw err;
