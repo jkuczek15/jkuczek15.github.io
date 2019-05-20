@@ -49,7 +49,7 @@ $ node build --name username --dark
 
 #### Customize background image
 
-To customize the background image just provide `--background [url]` argument while building
+To customize the background image just provide `--background [url]` argument while building.
 
 ```
 $ node build --name username --background https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634
