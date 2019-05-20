@@ -24,7 +24,7 @@
     </div>
     <div id="display">
         <div id="work">
-            <h1>Work.</h1>
+            <h1>Welcome.</h1>
             <div id="projects"></div>
         </div>
         <div id="blog_section" style="display:none;">
@@ -32,10 +32,11 @@
             <div id="blogs"></div>
         </div>
         <div id="footer">
-            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+            <a href="https://github.com/jkuczek15" target="_blank">Googling is the most valuable skill of <span id="year">2019</span></a>
         </div>
     </div>
     <script type="text/javascript">
+    document.getElementById("year").innerHTML = new Date().getFullYear();
     setTimeout(function(){
         document.getElementById("loading").classList.add("animated");
         document.getElementById("loading").classList.add("fadeOut");
