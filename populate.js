@@ -63,7 +63,7 @@ jsdom.fromFile("./assets/index.html", options).then(function (dom) {
         icon.setAttribute("type", "image/png");
         document.getElementsByTagName("head")[0].appendChild(icon);
         document.getElementById("profile_img").style.background = `url('${user.avatar_url}') center center`
-        document.getElementById("username").innerHTML = `<span style="display:${user.name == null || !user.name ? 'none' : 'block'};">${user.name}</span>@${user.login}`;
+        document.getElementById("username").innerHTML = `<a target="_blank" style="color: white; text-decoration: none;" href="https://github.com/jkuczek15"><span style="display:${user.name == null || !user.name ? 'none' : 'block'};">${user.name}</span>@${user.login}</a>`;
         //document.getElementById("github_link").href = `https://github.com/${user.login}`;
         document.getElementById("userbio").innerHTML = convertToEmoji(user.bio);
         document.getElementById("userbio").style.display = user.bio == null || !user.bio ? 'none' : 'block';
@@ -72,7 +72,8 @@ jsdom.fromFile("./assets/index.html", options).then(function (dom) {
         <span style="display:${user.email == null || !user.email ? 'none' : 'block'};"><i class="fas fa-envelope"></i> &nbsp; ${user.email}</span>
         <span style="display:${user.blog == null || !user.blog ? 'none' : 'block'};"><i class="fas fa-link"></i> &nbsp; ${user.blog}</span>
         <span style="display:${user.location == null || !user.location ? 'none' : 'block'};"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; ${user.location}</span>
-        <span style="display:${user.hireable == false || !user.hireable ? 'none' : 'block'};"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; <a style="color: white;" target="_blank" href="https://resold.us">Resold Founder</a></span>`;
+        <span style="display:${user.hireable == false || !user.hireable ? 'none' : 'block'};"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; <a style="color: white; text-decoration: none;
+        " target="_blank" href="https://resold.us">Resold Founder</a></span>`;
         //add data to config.json
         fs.readFile("config.json", function (err , data) {
             if (err) throw err;

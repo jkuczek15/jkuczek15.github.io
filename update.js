@@ -10,4 +10,7 @@ fs.readFile("config.json", function (err , data) {
         return;
     }
     updateHTML(username);
+    fs.writeFile('config.json', JSON.stringify(data, null, ' '), function(error){
+      if (error) throw err;
+    });
 });
